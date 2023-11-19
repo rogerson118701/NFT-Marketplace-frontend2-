@@ -1,0 +1,7 @@
+sword,
+shield,
+pitching,
+tosh,
+bow,
+model,
+skill

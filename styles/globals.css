@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.dashboard {
+  background-image: url('/images/back3.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.walletdialog {
+  background-image: url('/images/back4.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.dialog-content::-webkit-scrollbar {
+  width: 2px;
+}
+
+.dialog-content::-webkit-scrollbar-thumb {
+  background-color: #3d3d3d;
+  border-radius: 1px;
+}
+
+.dialog-content::-webkit-scrollbar-track {
+  background-color: #230B33;
+  border-radius: 1px;
+}
+
+@layer base {
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.horizantal-content::-webkit-scrollbar {
+  height: 4px;
+}
+
+.horizantal-content::-webkit-scrollbar-thumb {
+  background-color: #009FFF;
+  border-radius: 2px;
+}
+
+.horizantal-content::-webkit-scrollbar-track {
+  background-color: #434244;
+  border-radius: 2px;
+}
+
+.nftmarketplace{
+  /* background: var(--pp3-background, linear-gradient(113deg, #984D38 -30.3%, #181E41 58.12%)); */
+  background: #2B2B2B;
+}
